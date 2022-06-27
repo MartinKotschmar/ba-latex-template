@@ -1,0 +1,32 @@
+\documentclass[first=firstname,last=lastname,company=comp,location=Dresden,simple]{baarticle}
+
+\newacronym{HTTP}{HTTP}{Hypertext Transfer Protocol}
+\newacronym{UC}{UC}{Underpinning contract}
+\newacronym{ulong}{ulong}{unsigned 64-bit integer}
+\newcommand{\basimpleabstract}{
+    \addcontentsline{toc}{section}{Abstract}
+    This is going to be in the abstract.
+}
+\begin{document}
+    \begin{basimple}[
+        img=../empty.png,
+        course=thecourse,
+        title=The title,
+        number=1234567,
+        corrector={corrector1,corrector2},
+        themedate=\today,
+        returndate=\today,
+        signature=../empty.png,
+        location=Dresden,
+        type=thesis,
+    ]
+        \section{This is easy}
+        And also very satisfying. \gls{HTTP}\gls{UC}\gls{ulong}
+        \clearpage
+        \begin{baappx}
+            \begin{bafigure}{An intresting addition}
+                This is a working appendix.
+            \end{bafigure}
+        \end{baappx}
+    \end{basimple}
+\end{document}
